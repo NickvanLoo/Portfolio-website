@@ -1,0 +1,250 @@
+<html>
+    <script>
+         $(window).scroll(function () {
+        if ($(this).scrollTop() > 200) {
+            $('.navbar').fadeIn('slow').css('display', 'flex');
+        } else {
+            $('.navbar').fadeOut('slow').css('display', 'none');
+        }
+    });
+     $('.skill').waypoint(function () {
+        $('.progress .progress-bar').each(function () {
+            $(this).css("width", $(this).attr("aria-valuenow") + '%');
+        });
+    }, {offset: '80%'});
+    </script>
+        <head>
+            <link rel="stylesheet" href="style.css">
+            <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.0/typed.min.js" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+         
+        </head>
+    <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
+        <a href="index.html" class="navbar-brand ml-lg-3">
+            <h1 class="m-0 display-5"><span class="text-success">Nick</span> van Loo</h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
+            <div class="navbar-nav m-auto py-0">
+                <a href="#home" class="nav-item nav-link active">Home</a>
+                <a href="#about" class="nav-item nav-link">Over mij</a>
+                <a href="#skill" class="nav-item nav-link">Vaardigheden</a>
+                <a href="#qualification" class="nav-item nav-link">Ervaring</a>
+                <a href="#contact" class="nav-item nav-link">Contact</a>
+            </div>
+            <!--<a href="" class="btn btn-menu d-none d-lg-block" style="background-color:#457efa; color: #ffffff;">Huur me in</a>-->
+        </div>
+    </nav>
+        <div class="container-fluid bg-success d-flex align-items-center mb-5 py-5" id="home" style="min-height: 80vh;">
+        <div class="container">
+            <div class="row align-items-center">
+               
+                <div class="col-lg-7 text-center text-lg-left">
+                            
+                    <h3 class="text-white font-weight-normal mb-3">Hallo, mijn naam is</h3>
+                    <h1 class="display-3 text-uppercase text-primary mb-2" style="-webkit-text-stroke: 4px #ffffff;">Nick van Loo</h1>
+                    <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
+                    <div class="typed-text-output d-none">Applicatieontwikkelaar</div>
+                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
+                        <a href="" class="btn btn-white mr-4">Download CV</a>
+                        
+                        <a href="" class="btn btn-blue d-none d-sm-block"></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 px-8 pl-lg-0 pb-5 pb-lg-4 about-img">
+                    <!--<img style="height: 450px" class="img-fluid w-100 rounded-circle shadow-sm" src="img/foto_van_mij.jpg" alt="">-->
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="container-fluid py-5" id="about">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Over mij</h1>
+                <h1 class="position-absolute text-uppercase text-success">Over mij</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-5 pb-4 pb-lg-0">
+                    <img style="width: 400px" class="img-fluid rounded" src="img/foto_van_mij.jpg" alt="">
+                </div>
+                <div class="col-lg-7">
+                    <h3 class="mb-4">Junior Software Developer</h3>
+                    <p>Ik zit op dit moment in het 3e jaar van de opleiding Applicatieontwikkelaar MBO niveau 4 aan het Alfa-college in Groningen.</p>
+                    <div class="row mb-3">
+                        <div class="col-sm-6 py-2"><h6>Naam: <span class="text-secondary">Nick van Loo</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Geboortedatum: <span class="text-secondary">28 December 2000</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Opleiding: <span class="text-secondary">Applicatieontwikkelaar Niveau 4 (Nog mee bezig)</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Ervaring: <span class="text-secondary">Ik ben nog in opleiding</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Emailadres: <span class="text-secondary">nick2000.nvl@gmail.com</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Provincie: <span class="text-secondary">Groningen</span></h6></div>
+                    </div>
+                    <!--<a href="" class="btn blue btn-outline-primary mr-4">Hire Me</a>
+                    <a href="" class="btn btn-outline-primary">Learn More</a>-->
+                </div>
+            </div>
+        </div>
+    </div>
+         <div class="container-fluid py-5" id="skill">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Vaardigheden</h1>
+                <h1 class="position-absolute text-uppercase text-success">Mijn vaardigheden</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">HTML</h6>
+                            <h6 class="font-weight-bold">85%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar html bg-primary" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">CSS</h6>
+                            <h6 class="font-weight-bold">75%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar css bg-warning" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">PHP</h6>
+                            <h6 class="font-weight-bold">70%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar php bg-danger" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">Javascript</h6>
+                            <h6 class="font-weight-bold">65%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar js bg-danger" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">Bootstrap</h6>
+                            <h6 class="font-weight-bold">75%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bootstrap bg-dark" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">SQL</h6>
+                            <h6 class="font-weight-bold">75%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar sql bg-info" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    <div class="container-fluid py-5" id="qualification">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Kwaliteiten</h1>
+                <h1 class="position-absolute text-uppercase text-success">Opleiding en Werkervaring</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h3 class="mb-4">Mijn opleidingen</h3>
+                    <div class="border-left border-primary pt-2 pl-4 ml-2">
+                        <div class="position-relative ex-me mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -35px; font-size: 22px;"></i>
+                            <h5 class="font-weight-bold mb-1">Medewerker Beheer ICT MBO niveau 3</h5>
+                            <p class="mb-2"><strong>Alfa-college</strong> | <small>2017 - 2019</small></p>
+                            <p>Opleiding Mederwerker Beheer ICT op het Alfa-college te Groningen</p>
+                        </div>
+                        <div class="position-relative ex-me mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -35px;  font-size: 22px;"></i>
+                            <h5 class="font-weight-bold mb-1">Applicatie- en mediaontwikelaar MBO niveau 4</h5>
+                            <p class="mb-2"><strong>Alfa-college</strong> | <small>2019 - Heden</small></p>
+                            <p>Opleiding Applicatie- en mediaontwikelaar MBO niveau 4 op het Alfa-college te Groningen</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="mb-4">Mijn werkervaringen</h3>
+                    <div class="border-left border-primary pt-2 pl-4 ml-2">
+                        <div class="position-relative ex-me mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px;left: -35px;  font-size: 22px;"></i>
+                            <h5 class="font-weight-bold mb-1">Stagiair ICT-helpdesk medewerker</h5>
+                            <p class="mb-2"><strong>Capgemini</strong> | <small> feb. 2019 - jul. 2019</small></p>
+                            <p>Ik heb voor de niveau 3 opleiding een halfjaar stage gelopen bij Capgemini, bij een ICT-servicepunt.</p>
+                        </div>
+                        <div class="position-relative ex-me mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px;left: -35px;  font-size: 22px;"></i>
+                            <h5 class="font-weight-bold mb-1">Stagiair Software Developer</h5>
+                            <p class="mb-2"><strong>A.A.P. Verzekeringen</strong> | <small> sep. 2020 - feb. 2021</small></p>
+                            <p>Ik heb bij A.A.P. Verzekeringen de 1e stage voor de niveau 4 opleiding gedaan.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="container-fluid py-5" id="contact">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Contact</h1>
+                <h1 class="position-absolute text-uppercase text-success">Contact</h1>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="contact-form text-center">
+                        <div id="success"></div>
+                        Voor eventueel contact kunt u mij een mailtje sturen door op de button de klikken: <a class="btn btn-success" href="mailto:nick2000.nvl@gmail.com"><i class="fas fa-envelope"></i></a></br>
+                        Of stuur mij een berichtje via LinkedIn.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Qualification End -->
+    <!-- HTML Code -->
+  
+    <div class="container-fluid bg-success text-white mt-5 py-1 px-sm-1 px-md-5">
+        <div class="container text-center py-5">
+            <div class="d-flex justify-content-center mb-4">
+                <a class="btn btn-light btn-social mr-2" target="_blank" href="https://www.linkedin.com/in/nick-van-loo-37675b196/?trk=people-guest_people_search-card&originalSubdomain=nl"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <!--<div class="d-flex justify-content-center mb-3">
+                <a class="text-white" href="#">Privacy</a>
+                <span class="px-3">|</span>
+                <a class="text-white" href="#">Terms</a>
+                <span class="px-3">|</span>
+                <a class="text-white" href="#">FAQs</a>
+                <span class="px-3">|</span>
+                <a class="text-white" href="#">Help</a>
+            </div>-->
+            <p class="m-0">©<script>
+            var CurrentYear = new Date().getFullYear()
+            document.write(CurrentYear)
+        </script> <a class="text-white font-weight-bold" href="#">Nick van Loo</a>. All Rights Reserved. Designed by <a class="text-white font-weight-bold" href="#">Nick van Loo</a>
+            </p>
+        </div>
+    <!-- Footer End -->
+
+</html>
