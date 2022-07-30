@@ -123,3 +123,11 @@ transition: 2s;
             border-radius: 10px;
             transition: 2s;
             }
+            .my-custom-scrollbar {
+              position: relative;
+              height: 400px;
+              overflow: auto;
+              }
+              .table-wrapper-scroll-y {
+              display: block;
+              }
